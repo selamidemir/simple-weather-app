@@ -1,38 +1,92 @@
-.App {
+/* 
+Light Lime: #abd699
+Fresh Lemon: #ffe26a
+Teal: #75c9b7
+Mint: #c7ddcc
+Navy: #16123f */
+
+body {
+  background-color: rgba(128, 128, 128, 0.473);
+}
+
+.header {
+  background-color: #c7ddcc;
+  height: 129px;
+  margin-top: 0;
+  border-bottom: 1px solid #75c9b7;
+
+}
+
+#navbarScroll {
+  z-index: 5;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.list-weather-of-days {
+  margin-top: 11px;
+}
+
+.list-weather-of-days div {
+  margin: 15px;
+  display: inline-block;
+  max-width: 233px;
+  /* max-width: 250px;
+  width: 100%; */
+  width: 100%;
+  margin: 5px;
+}
+
+.min-temp {
+  /* width: 41%; */
+  background-color: #ffe16a54;
+  font-size: 19px;
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.max-temp {
+  /* width: 41%; */
+  background-color: #75c9b773;
+  font-size: 19px;
+  display: inline-block;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+  background-color: #c7ddcc;
+  margin-top: 15px;
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #75c9b7;
+  font-size: 19px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.error {
+  color: red;
+  text-align: center;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.loading {
+  text-align: center;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-of-day {
+  /* width: 100%; */
+  height: 295px;
+  padding: 11px;
+  /* background-color: #c7ddcc; */
+  border: 1px solid #75c9b77a;
+}
+
+/* .weather-of-day .card-text {
+  background-color: #c7ddcc;
+} */
+.current-weather {
+  border: 1px solid #75c9b7;
+  height: 235px;
 }

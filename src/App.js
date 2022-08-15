@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Col, Container, Row } from 'react-bootstrap';
 import './App.css';
+import Content from './components/Content';
+import DefaultCities from './components/DefaultCities';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Container style={{maxWidth: '767px'}}>
+        <Row className='border'>
+          <Col className='p-0'>
+            <Header />
+          </Col>
+        </Row>
+        <Row>
+          <Col className='p-0'>
+            <DefaultCities />
+          </Col>
+        </Row>
+        <Row className=''>
+          <Col className='content shadow rounded p-3'>
+            <Content />
+          </Col>
+        </Row>
+        <Row>
+          <Col className='footer shadow text-dark mb-0'>
+            <Footer />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

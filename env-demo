@@ -1,0 +1,6 @@
+REACT_APP_DEFAULT_CITY=41
+REACT_APP_WEATHERBIT_API_KEY=weatherbit_api_yazilacak
+REACT_APP_WEATHERBIT_API_URL='https://api.weatherbit.io/v2.0/'
+REACT_APP_WEATHERBIT_API_ICON_URL='https://www.weatherbit.io/static/img/icons/'
+REACT_APP_NINJAS_API_KEY=nijas_api_yazilacak
+REACT_APP_NINJAS_CITY_API_END_POINT='https://api.api-ninjas.com/v1/'
